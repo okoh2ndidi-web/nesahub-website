@@ -480,7 +480,7 @@
     </div>
   </section>
 
-  <!-- CONTACT -->
+    <!-- CONTACT -->
   <section id="contact">
     <div class="container">
       <div class="section-title">
@@ -491,22 +491,31 @@
       </div>
 
       <div class="contact">
+        <!-- LEFT: BOOKING FORM -->
         <div class="feature">
           <div class="tag">Booking Form</div>
 
-          <!-- Replace action with your Formspree endpoint or your own backend later -->
+          <!-- Formspree endpoint -->
           <form action="https://formspree.io/f/mnjbgwyo" method="POST">
-  <div style="display:grid; gap:10px;">
-    <input name="name" placeholder="Your Name" required />
-    <input name="phone" placeholder="Phone Number" required />
-    <input name="location" placeholder="Location (e.g., Ugbowo, GRA, etc.)" required />
-    <input name="job_type" placeholder="Job Type (e.g., Carpentry, Plumbing)" required />
-    <textarea name="details" placeholder="Describe the issue. Add measurements, urgency, and budget range if possible." required></textarea>
-    <button class="btn primary" type="submit">Submit Request</button>
-    <p class="note">Tip: For fastest response, send photos on WhatsApp.</p>
-  </div>
-</form>
+            <div style="display:grid; gap:10px;">
+              <input name="name" placeholder="Your Name" required />
+              <input type="tel" name="phone" placeholder="Phone Number" required inputmode="tel" autocomplete="tel" />
+              <input type="email" name="_replyto" placeholder="Email (optional)" autocomplete="email" />
+              <input name="location" placeholder="Location (e.g., Ugbowo, GRA, etc.)" required />
+              <input name="job_type" placeholder="Job Type (e.g., Carpentry, Plumbing)" required />
+              <textarea
+                name="details"
+                placeholder="Describe the issue. Add measurements, urgency, and budget range if possible."
+                required
+              ></textarea>
 
+              <button class="btn primary" type="submit">Submit Request</button>
+              <p class="note">Tip: For fastest response, send photos on WhatsApp.</p>
+            </div>
+          </form>
+        </div>
+
+        <!-- RIGHT: DIRECT CONTACT -->
         <div class="feature">
           <div class="tag">Direct Contact</div>
           <h3 style="margin:0 0 8px;">Talk to NESAHub</h3>
@@ -515,8 +524,12 @@
           </p>
 
           <div style="display:grid; gap:10px;">
-            <a class="btn whatsapp" href="https://wa.me/2349153249944" target="_blank" rel="noopener">WhatsApp: +234 XXXXXXXXXX</a>
-            <a class="btn" href="tel:+2349153249944">Call: +234 9153249944</a>
+            <!-- NOTE: wa.me links must NOT include + -->
+            <a class="btn whatsapp" href="https://wa.me/2349153249944" target="_blank" rel="noopener">
+              WhatsApp: +234 915 324 9944
+            </a>
+
+            <a class="btn" href="tel:+2349153249944">Call: +234 915 324 9944</a>
             <a class="btn" href="mailto:nesahub.operations@gmail.com">Email: nesahub.operations@gmail.com</a>
           </div>
 
