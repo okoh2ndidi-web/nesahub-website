@@ -232,6 +232,25 @@
       font-size:13px;
       color:rgba(184,195,230,.88);
     }
+    .note{
+  margin-top:10px;
+  font-size:13px;
+  color:rgba(184,195,230,.88);
+}
+
+/* 👇 ADD THIS HERE */
+.logo-img{
+  height:42px;
+  width:auto;
+  display:block;
+}
+
+/* Mobile adjustment */
+@media (max-width: 600px){
+  .logo-img{
+    height:36px;
+  }
+}
   </style>
 </head>
 
@@ -241,7 +260,7 @@
     <div class="container">
       <div class="nav-inner">
         <a class="brand" href="#top" aria-label="NESAHub Home">
-         <img src="./nesahub-logo.png" alt="NESAHub Logo" style="height:42px;">
+         <img src="./nesahub-logo.png" alt="NESAHub Logo" class="logo-img">
           <div>
             <div style="line-height:1.1; font-size:16px;">NESAHub</div>
             <div style="line-height:1.1; font-size:12px; color:var(--muted); font-weight:700;">
@@ -555,7 +574,7 @@
     <div class="container">
       <div class="footer-row">
         <div class="brand" style="gap:12px;">
-       <img src="./nesahub-logo.png" alt="NESAHub Logo" style="height:42px;">
+       <img src="./nesahub-logo.png" alt="NESAHub Logo" class="logo-img">
           <div>
             <div style="font-weight:900; color:var(--text); line-height:1.1;">NESAHub</div>
             <div style="font-size:12px;">Connecting clients, workmen & traders</div>
