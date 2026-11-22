@@ -9,3 +9,14 @@
 
 /* Six-page navigation and future participation */
 .service-links{flex-wrap:wrap;column-gap:20px}.participation-links{display:flex;flex-wrap:wrap;gap:16px;max-width:330px}.participation-links a{color:white;padding:8px 0}section[id],article[id],#gallery{scroll-margin-top:24px}
+
+/* Approved homepage contact appearance. */
+.homepage-whatsapp{gap:8px;width:auto;max-width:100%;min-height:44px;padding:8px 14px;font-size:.88rem;}
+.homepage-whatsapp img{display:block;width:28px;height:32px;flex:0 0 28px;object-fit:contain;border-radius:3px;}
+/* Homepage service actions and top WhatsApp colour adjustment. */
+.home-hero .hero-actions{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px;}
+.home-hero .hero-actions .button{width:auto;flex:0 0 auto;gap:6px;padding:10px;font-size:.875rem;white-space:nowrap;}
+.home-hero .homepage-whatsapp{background:#F5C84B;border-color:#F5C84B;color:#14532D;}
+.home-hero .homepage-whatsapp:hover{background:#F5C84B;border-color:#F5C84B;color:#14532D;}
+@media(min-width:1101px){.home-hero .hero-grid{grid-template-columns:minmax(0,1fr) 260px;gap:32px;}.home-hero .hero-actions{flex-wrap:nowrap;}}
+@media(max-width:600px){.home-hero .hero-actions .button{flex:1 1 calc(50% - 8px);white-space:normal;min-width:0;}}
